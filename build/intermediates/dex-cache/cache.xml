@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_724e22feb9d569e3bc116c310bac84b5687fe6b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_9d6c093a03388e3b1257700af9e579b86126d754.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_e7297fe8ba09c7aae6959080ebf15b0b8137086d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_6179c7edf391af00fbb5196b113cff4ec0d96397.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_fe3d8746af8186d7f6bad6f842ad62f797eeacec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_13c8b9567829c9f4a2049dbf71dcd0b50fd34c08.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_e5926f042d3c8c5e66f33e3a26e6e8fbbe7e5035.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_2332370d7363de766c3af07fadc6a2dae3b92004.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_d2b9b8a9b7065f1280c4a4c74b914a16627f3e73.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_a741f4f7bc00b6569dd813f0d1179970e5e22e06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_aeb01fd59f3c5c17bbde5579ad1a07a396919293.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_f083b436e02f37d82d122cf20cca774bccb6e19c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_4084788def09af931c10a590c44df3b14e841baf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_1c5d03e0266e7a546e1b3ff0a3d6dab0a7177f19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/thebv/Workspaces/AndroidStudioProjects/TagLayout/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_4f29e91d3ff085b94945943883ab709359bba827.jar" />
+    </item>
+
+</items>
