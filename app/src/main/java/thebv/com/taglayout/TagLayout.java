@@ -1,6 +1,10 @@
-package ncb.vnpay.com.taglayout;
+package thebv.com.taglayout;
 
 import android.app.Activity;
+import android.graphics.Rect;
+import android.support.annotation.ColorInt;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.IntDef;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
@@ -10,6 +14,8 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 
 /**
@@ -24,6 +30,7 @@ public class TagLayout {
     private LinearLayout llViewTag;
     private HorizontalScrollView hsview;
     private LinearLayout llParent;
+    private boolean isAttackToView;
 
     public void notifyDataSetChanged() {
         attackToView(llViewTag);
@@ -65,6 +72,7 @@ public class TagLayout {
         this.llViewTag = llViewTag;
 
         if (hsview == null) {
+            isAttackToView = true;
             hsview = new HorizontalScrollView(context);
             hsview.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
@@ -72,18 +80,20 @@ public class TagLayout {
             llParent.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             llParent.setOrientation(LinearLayout.VERTICAL);
             hsview.addView(llParent);
-            llViewTag.addView(hsview);
-
+            this.llViewTag.addView(hsview);
             hsview.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
                 @Override
                 public void onGlobalLayout() {
                     hsview.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                     drawTag();
+                    isAttackToView = false;
                 }
             });
         } else {
-            this.llParent.removeAllViews();
-            drawTag();
+            if (isAttackToView == false) {
+                this.llParent.removeAllViews();
+                drawTag();
+            }
         }
     }
 
@@ -101,14 +111,10 @@ public class TagLayout {
 
             TextView tvTag = new TextView(context);
             LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-            if (obj.textMarrgin != -1) {
-                layoutParams.setMargins(obj.textMarrgin, obj.textMarrgin, obj.textMarrgin, obj.textMarrgin);
+            if (obj.textMarrgin != null) {
+                layoutParams.setMargins(obj.textMarrgin.left, obj.textMarrgin.top, obj.textMarrgin.right, obj.textMarrgin.bottom);
             }
             tvTag.setLayoutParams(layoutParams);
-
-            if (obj.textPadding != -1) {
-                tvTag.setPadding(obj.textPadding, obj.textPadding, obj.textPadding, obj.textPadding);
-            }
 
             tvTag.setText(obj.text);
 
@@ -124,6 +130,10 @@ public class TagLayout {
 
             if (obj.backgroundRes != -1) {
                 tvTag.setBackgroundResource(obj.backgroundRes);
+            }
+
+            if (obj.textPadding != null) {
+                tvTag.setPadding(obj.textPadding.left, obj.textPadding.top, obj.textPadding.right, obj.textPadding.bottom);
             }
 
             final int finalI = i;
@@ -159,16 +169,26 @@ public class TagLayout {
         void onClick(TextView textView, int position);
     }
 
+    @IntDef({android.graphics.Typeface.NORMAL, android.graphics.Typeface.BOLD, android.graphics.Typeface.ITALIC, android.graphics.Typeface.BOLD_ITALIC})
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface TextStyle {}
+
     public static class ItemTag {
         private String text = "";
         private int textSize = -1;
         private int textColor = -1;
         private int textStyle = -1;
         private int backgroundRes = -1;
-        private int textMarrgin = -1;
-        private int textPadding = -1;
+        private Rect textMarrgin = null;
+        private Rect textPadding = null;
 
-        public ItemTag(String text, int textSize, int textColor, int textStyle, int backgroundRes, int textMarrgin, int textPadding) {
+        public ItemTag(String text,
+                       int textSize,
+                       @ColorInt int textColor,
+                       @TextStyle int textStyle,
+                       @DrawableRes int backgroundRes,
+                       Rect textMarrgin,
+                       Rect textPadding) {
             this.backgroundRes = backgroundRes;
             this.textColor = textColor;
             this.textStyle = textStyle;
@@ -205,20 +225,20 @@ public class TagLayout {
             return this;
         }
 
-        public int getTextMarrgin() {
+        public Rect getTextMarrgin() {
             return textMarrgin;
         }
 
-        public ItemTag setTextMarrgin(int textMarrgin) {
+        public ItemTag setTextMarrgin(Rect textMarrgin) {
             this.textMarrgin = textMarrgin;
             return this;
         }
 
-        public int getTextPadding() {
+        public Rect getTextPadding() {
             return textPadding;
         }
 
-        public ItemTag setTextPadding(int textPadding) {
+        public ItemTag setTextPadding(Rect textPadding) {
             this.textPadding = textPadding;
             return this;
         }

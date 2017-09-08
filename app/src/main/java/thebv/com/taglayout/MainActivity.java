@@ -1,6 +1,7 @@
-package ncb.vnpay.com.taglayout;
+package thebv.com.taglayout;
 
 import android.graphics.Color;
+import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
     public TagLayout.ItemTag getDefaultTagItem() {
         int textSize = (int) getResources().getDimension(R.dimen.text_size_normal);
         int textMarrgin = (int) getResources().getDimension(R.dimen.text_marrgin);
-        return new TagLayout.ItemTag("", textSize, Color.WHITE, -1, R.drawable.bg_tag, textMarrgin, -1);
+        Rect margin = new Rect(textMarrgin, textMarrgin, textMarrgin, textMarrgin);
+        return new TagLayout.ItemTag("", textSize, Color.WHITE, Typeface.NORMAL, R.drawable.bg_tag, margin, null);
     }
 }
